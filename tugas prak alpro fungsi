@@ -1,0 +1,98 @@
+# Statement
+Data = {'NIM':'L200220269','Nama':'Muhammad Aksal','Alamat':'Solo','Kode Pos':'57145','Kelas':'D','Fakultas':'Komunikasi dan Informatika','Usia':'18'}
+
+# Fungsi
+def TampilkanNIM (dokumen):
+    nim = dokumen['NIM']
+    return nim
+
+print(TampilkanNIM(Data))
+
+def TampilkanNama (dokumen):
+    nama = dokumen['Nama']
+    return nama
+
+print(TampilkanNama(Data))
+
+def TampilkanAlamat (dokumen):
+    alamat = dokumen['Alamat']
+    return alamat
+
+print(TampilkanAlamat(Data))
+
+def TampilkanKodePos (dokumen):
+    kodepos = dokumen['Kode Pos']
+    return kodepos
+
+print(TampilkanKodePos(Data))
+
+def TampilkanKelas (dokumen):
+    kelas = dokumen['Kelas']
+    return kelas
+
+print(TampilkanKelas(Data))
+
+def TampilkanFakultas (dokumen):
+    fakultas = dokumen['Fakultas']
+    return fakultas
+
+print(TampilkanFakultas(Data))
+
+def TampilkanUsia (dokumen):
+    usia = dokumen['Usia']
+    return usia
+
+print(TampilkanUsia(Data))
+
+def Bantuan():
+    print("""
+Pilihan yang tersedia :
+b menampilkan bantuan ini
+p menampilkan NIM
+q menampilkan Nama
+r menampilkan Alamat
+s menampilkan Kode Pos
+t menampilkan Kelas
+u menampilkan Fakultas
+v menampilkan Usia
+k keluar
+""")
+
+Bantuan()
+
+inp =''
+
+while inp != 'k' :
+    inp = input("Masukkan sebuah huruf!")
+    if inp == "p" :
+        print(TampilkanNIM(Data))
+    elif inp == "b" :
+        Bantuan()
+    elif inp == "q" :
+        print(TampilkanNama(Data))
+    elif inp == "r" :
+        print(TampilkanAlamat(Data))
+    elif inp == "s" :
+        print(TampilkanKodePos(Data))
+    elif inp == "t" :
+        print(TampilkanKelas(Data))
+    elif inp == "u" :
+        print(TampilkanFakultas(Data))
+    elif inp == "v" :
+        print(TampilkanUsia(Data))
+        break
+    else : 
+        print("Perintah tidak valid")
+        Bantuan()
+
+# Kegiatan 2 Konversi suhu
+def KonversiSuhu(C=0 ,F=0) :
+    if F==0 :
+        Fahrenheit = ((9/5) * C) + 32
+        print("Suhu", C,"Celcius setara dengan", Fahrenheit, "Fahrenheit")
+    else :
+        Celcius = 5/9 * (F-32)
+        print("Suhu", F ,"Fahrenheit setara dengan",Celcius,"Celcius")
+
+KonversiSuhu(F=95)
+KonversiSuhu(C=40)

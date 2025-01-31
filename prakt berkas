@@ -1,0 +1,11 @@
+# Kegiatan 2
+berkas = open("L200220269", "w")
+berkas.write("L200220269")
+berkas.write("\n03/26/2004")
+berkas.write("\nMuhammad Aksal")
+berkas.write("\nSolo")
+berkas.close()
+berkas = open("L200220269", "r")
+file = berkas.readlines()
+print(file[2],file[3],file[1],file[0])
+berkas.close()

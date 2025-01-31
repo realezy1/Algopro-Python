@@ -1,0 +1,6 @@
+# Kegiatan 1
+berkas = open("L200220269", "w" )
+berkas.write("L200220269")
+berkas.write("\n26-03-2004")
+berkas.write("\nMuhammad Aksal")
+berkas.close()
